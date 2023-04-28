@@ -1,0 +1,62 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+
+    <div class="slider">
+        <img src="{{ asset("img/TEST_slide.png") }}" alt="img1" class="img__slider active"/>
+        <img src="{{ asset("img/cereal-gfdf33d7d9_1280.jpg") }}" alt="img2" class="img__slider"/>
+        <img src="{{ asset("img/sunflower-g37006174e_1280.jpg") }}" alt="img3" class="img__slider"/>
+        <div class="precedent"><i class="fa-solid fa-chevron-right"></i></div>
+        <div class="suivant"><i class="fa-solid fa-chevron-left"></i></div>
+    </div>
+
+    <div class="nouveautés"> <h2>Les nouveautés</h2> </div>
+
+    <main class="card-container-accueil">
+
+        <div class="menu-card-accueil">
+            <img src="img/art.png" alt="menu picture">
+            <div class="blocktext">
+            <p>Affiche cartographie représentant Istanbul</p>
+            <p>Alcatela</p>
+            <p>79,99€</p>
+            <div class="blocktext2">
+            <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+            <input type="button" value="Ajouter au panier"/>
+            </div>
+        
+        </div>
+        </div>
+        <div class="menu-card-accueil">
+            <img src="img/art.png" alt="menu picture">
+            <div class="blocktext">
+            <p>Affiche cartographie représentant Istanbul</p>
+            <p>Alcatela</p>
+            <p>79,99€</p>
+            <div class="blocktext2">
+            <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+            <input type="button" value="Ajouter au panier"/>
+            </div>
+        
+        </div>
+        </div>
+        <div class="menu-card-accueil">
+            <img src="img/art.png" alt="menu picture">
+            <div class="blocktext">
+            <p>Affiche cartographie représentant Istanbul</p>
+            <p>Alcatela</p>
+            <p>79,99€</p>
+            <div class="blocktext2">
+            <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+            <input type="button" value="Ajouter au panier"/>
+            </div>
+        
+        </div>
+        </div>
+       
+    
+        </main>  
+{% endblock %}

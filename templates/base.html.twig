@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
+
+    </head>
+    <header>
+
+        <p class="livraison">Livraison gratuite pour commandes de plus de 100€</p>
+        <a href="index.html" class="logo"><img src="{{ asset ('img/logocybèle.svg') }}"></a>
+        <div class="ligne"></div>
+        <nav class="container">
+
+            <ul class="navgauche hidden">
+                <li> <a href="index.html">Accueil</a></li>
+                <li> <a href="oeuvres.html">Œuvres</a></li>
+                <li> <a href="artistes.html">Artistes</a></li>
+                <li> <a href="agenda.html">Agenda</a></li>
+                <li> <a href="lieu.html">Lieu</a></li>
+                <li> <a href="contact.html">Contact</a></li>
+            </ul>
+            <a class="menuburger" href="#"><i class="fa-solid fa-bars"></i></a>
+
+             <ul class="navdroite">
+    
+                <li> <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li> <a href="connexion.html"><i class="fa-solid fa-user"></i></a></li>
+                <li> <a href="#"><i class="fa-solid fa-heart"></i></i></a></li>
+                <li> <a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="ligne2"></div>
+
+    </header>
+
+
+    <body>
+        
+        {% block body %}{% endblock %}
+
+    <footer>
+
+    <section class="fondblanc">
+<main class="logis">
+    <div class="livraisons">
+    <i class="fa-solid fa-truck"></i>   <br>
+    <p class="Titre1">Livraisons garanties</p>
+    <p class="SousTitre1"></p>par des transporteurs spécialisés</p> 
+</div>
+<div class="paiement">
+    <i class="fa-solid fa-lock"></i> <br>
+    <p class="Titre2"></p>Paiement sécurisés</p>
+    <p class="SousTitre2"></p>par CB ou 3x sans frais</p> 
+</div>   
+<div class="retours">
+    <i class="fa-solid fa-rotate-left"></i> <br>
+    <p class="Titre3"></p>Retours gratuits</p>
+    <p class="SousTitre3"></p>15 jours pour changer d’avis</p> 
+</div>   
+</main>
+
+<div class="newsletter">
+    <p>Abonnez-vous à notre newsletter</p>
+    <p>Soyez sûr de ne manquer aucune de nos nouveautés et promotions</p>
+    <input type="text" placeholder="Saisissez votre adresse e-mail" name="mail" required> <button type="submit">Envoyer</button>
+    </div>
+
+    </section>
+    <section class="fondbleu">
+
+<div class="cartedevisite">
+<p>
+Galerie Cybèle<br>
+7 rue Beaubourg Paris (75003)<br>
+<a href="tel:+33109080706">+33 1 09 08 07 06</a> <br>
+<a href="mailto:bonjour@galeriecybèle.fr">bonjour@galeriecybèle.fr</a><br>
+Du lundi au samedi de 11h à 19h<br>
+Accès :<br>
+Metro 11<br>
+Arts et Métiers<br>
+Rambuteau
+</p>
+</div>
+
+
+
+<div class="network">
+    <p>Rejoignez-nous sur les réseaux</p>
+    <a href="https://fr-fr.facebook.com/" target="_blank" rel="noreferrer noopener"><i
+            class="fa-brands fa-square-facebook"></i></a>
+    <a href="https://www.instagram.com/?hl=fr" target="_blank" rel="noreferrer noopener"><i
+            class="fa-brands fa-instagram-square"></i></a>
+    <a href="https://twitter.com/home" target="_blank" rel="noreferrer noopener"><i
+            class="fa-brands fa-twitter-square"></i></a>
+    <a href="https://www.pinterest.fr" target="_blank" rel="noreferrer noopener"><i
+            class="fa-brands fa-square-pinterest"></i></a>
+</div>
+
+
+
+<div class="informations">
+
+<p>
+<br>
+Mentions légales<br>
+Politique de confidentialité<br>
+Cookies<br>
+Nos conditions générales de ventes<br>
+Contactez-nous<br>
+Foire aux questions
+</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+</footer>
+ </body>
+ {% block javascripts %}{% endblock %}
+ <script src="{{ asset('js/scripts.js') }}"></script>
+</html>

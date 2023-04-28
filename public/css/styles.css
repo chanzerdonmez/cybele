@@ -1,0 +1,1119 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "burger    navdroite"
+        "navgauche navgauche"
+}
+
+main {
+    color: black;
+}
+
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul li,
+.menuburger {
+    margin: 15px;
+}
+
+.navdroite {
+    grid-area: navdroite;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menuburger {
+    grid-area: burger;
+}
+
+.navgauche {
+    grid-area: navgauche;
+}
+
+.livraison {
+    background-color: blue;
+    color: white;
+    padding: 0.5rem;
+    font-size: 12px;
+    text-align: center;
+}
+
+.logo {
+    margin: 0px auto;
+    width: 250px;
+    display: block;
+    margin-top: 1rem;
+}
+
+.ligne {
+    background-color: rgb(233, 233, 233);
+    border: none;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.ligne2 {
+    background-color: rgb(233, 233, 233);
+    border: none;
+    height: 1px;
+}
+
+.logis {
+    color: #0000FF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+header .container {
+    padding: 0 30px;
+}
+
+nav ul li a {
+    color: blue;
+}
+
+header .container .menuburger {
+    color: blue;
+}
+
+.hidden {
+    display: none;
+}
+
+.navgauche>li:last-child {
+    margin-bottom: 30px;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+
+footer .fondblanc .logis .paiement {
+    margin-top: 60px;
+}
+
+footer .fondblanc .logis .retours {
+    margin-top: 60px;
+}
+
+footer .fondblanc .logis {
+    padding-bottom: 60px;
+    line-height: 150%;
+}
+
+footer .fondblanc .logis .livraisons i {
+    font-size: 36px;
+}
+
+footer .fondblanc .logis .paiement i {
+    font-size: 36px;
+}
+
+footer .fondblanc .logis .retours i {
+    font-size: 36px;
+}
+
+footer .fondbleu {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    line-height: 150%;
+}
+
+footer .fondbleu .network a {
+    font-size: 30px;
+    color: white;
+    line-height: 150%;
+    margin: 7px;
+}
+
+footer .fondbleu .network {
+
+    margin-top: 60px;
+}
+
+footer .fondbleu .newsletter {
+
+    margin-top: 60px;
+}
+
+footer .fondbleu .informations {
+
+    margin-top: 60px;
+}
+
+footer .fondbleu .cartedevisite a {
+    color: white;
+}
+
+footer .fondbleu {
+    background-color: blue;
+    color: white;
+    gap: 50px;
+}
+
+footer .fondblanc {
+    color: blue;
+    background-color: white;
+}
+
+footer .newsletter {
+    text-align: center;
+    padding-bottom: 60px;
+    line-height: 150%;
+}
+
+footer .newsletter input {
+    padding: 0 8px;
+    vertical-align: middle;
+    border-radius: 2px;
+    width: 40%;
+    min-height: 36px;
+    background-color: #ffffff;
+    border: 1px solid rgb(233, 233, 233);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    outline: none;
+    margin-top: 0px;
+
+}
+
+footer .fondblanc .newsletter button {
+
+    min-width: 80px;
+    height: 38px;
+    color: white;
+    background-color: blue;
+    border-radius: 2px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    margin-top: 0;
+    
+}
+
+body .selecto {
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+body .selecto select {
+    border-color: blue;
+    border-radius: 2px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 0 5rem;
+}
+
+.menu-card {
+    width: auto;
+    height: 450px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(39, 39, 39, 0.1);
+    border-radius: 2px;
+}
+
+
+.menu-card p {
+    text-align: start;
+    color: blue;
+}
+
+.menu-card .blocktext2 input {
+
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 16px;
+    border-radius: 2px;
+    min-width: 80px;
+    height: 32px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+.menu-card .blocktext2 i {
+    margin-top: 1rem;
+}
+
+.menu-card .blocktext2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: blue;
+
+}
+
+
+.menu-card .blocktext {
+    margin-top: 1.4rem;
+    line-height: 150%;
+}
+
+
+.menu-card img {
+    width: 300px;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+.card-container-accueil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 0 5rem;
+}
+
+.menu-card-accueil {
+    width: auto;
+    height: 450px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(39, 39, 39, 0.1);
+    border-radius: 2px;
+    margin-top: 3.5rem;
+}
+
+
+.menu-card-accueil p {
+    text-align: start;
+    color: blue;
+}
+
+.menu-card-accueil .blocktext2 input {
+
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 16px;
+    border-radius: 2px;
+    min-width: 80px;
+    height: 32px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+.menu-card-accueil .blocktext2 i {
+    margin-top: 1rem;
+}
+
+.menu-card-accueil .blocktext2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    color: blue;
+
+}
+
+
+.menu-card-accueil .blocktext {
+    margin-top: 1.4rem;
+    line-height: 150%;
+}
+
+
+.menu-card-accueil img {
+    width: 300px;
+    border-radius: 2px;
+}
+
+
+
+.nouveautés {
+    margin-top: 15rem;
+    text-align: center;
+    color: blue;
+}
+
+
+
+
+.card-container-agenda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 0 5rem;
+}
+
+.menu-card-agenda {
+    width: 300px;
+    height: 450px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(39, 39, 39, 0.1);
+    border-radius: 2px;
+}
+
+.menu-card-agenda span p {
+    text-align: start;
+    color: blue;
+}
+
+.menu-card-agenda .blocktext2 i {
+    margin-top: 1rem;
+}
+
+.menu-card-agenda .blocktext2 {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 1rem;
+    color: blue;
+
+}
+
+
+.menu-card-agenda .blocktext {
+    margin-top: 1.4rem;
+    line-height: 150%;
+}
+
+
+.menu-card-agenda img {
+    width: 300px;
+    height: 150px;
+    border-radius: 2px;
+}
+
+
+.soustitre {
+    margin-top: 170px;
+    text-align: center;
+    color: blue;
+}
+
+
+
+
+.card-container-artistes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 0 5rem;
+}
+
+.menu-card-artistes {
+    width: auto;
+    height: 423px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(39, 39, 39, 0.1);
+    border-radius: 2px;
+}
+
+.menu-card-artistes p {
+    text-align: start;
+    color: blue;
+}
+
+.menu-card-artistes .blocktext2 input {
+
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 16px;
+    border-radius: 2px;
+    min-width: 80px;
+    height: 32px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+.menu-card-artistes .blocktext2 i {
+    margin-top: 1rem;
+}
+
+.menu-card-artistes .blocktext2 {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 1rem;
+    color: blue;
+
+}
+
+
+.menu-card-artistes .blocktext {
+    margin-top: 1.4rem;
+    line-height: 150%;
+}
+
+
+.menu-card-artistes img {
+    width: 300px;
+    border-radius: 2px;
+}
+
+
+
+.produit .description input {
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 16px;
+    border-radius: 2px;
+    min-width: 80px;
+    height: 32px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+
+
+
+body .slider {
+    height: 50vh;
+    position: relative;
+    transform: translateY(144px);
+}
+
+body .slider img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+body .slider img.active {
+    opacity: 1;
+}
+
+.suivant,
+.precedent {
+    color: blue;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.suivant {
+    left: 1rem;
+}
+
+.precedent {
+    right: 1rem;
+}
+
+.contactez-nous {
+    display: flex;
+    margin-right: 7rem;
+    flex-direction: column;
+    color: blue;
+    text-align: center;
+    margin-right: 0;
+    line-height: 150%;
+}
+
+.contactez-nous button {
+min-width: 80px;
+height: 32px;
+color: white;
+background-color: blue;
+border-radius: 2px;
+outline: none;
+border: 0;
+cursor: pointer;
+margin-bottom: 6rem;
+margin-top: 1rem;
+}
+
+.contactez-nous #message {
+    height: 100px;
+    width: 300px;
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+}
+
+.contact2 {
+    
+    display: flex;
+    text-align: center;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    flex-direction: column;
+        
+}
+
+.contact2 iframe {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+
+.contact1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+
+
+.lieu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.contactez-nous input {
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    min-height: 32px;
+}
+
+.contactez-nous select {
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    min-height: 36px;
+}
+
+
+
+
+
+
+.contactez-nous {
+    display: flex;
+    margin-right: 7rem;
+    flex-direction: column;
+    color: blue;
+    text-align: center;
+    margin-right: 0;
+    line-height: 150%;
+}
+
+.contactez-nous button {
+min-width: 80px;
+height: 32px;
+color: white;
+background-color: blue;
+border-radius: 2px;
+outline: none;
+border: 0;
+cursor: pointer;
+margin-bottom: 6rem;
+margin-top: 1rem;
+}
+
+.contactez-nous #message {
+    height: 100px;
+    width: 300px;
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+}
+
+.contact2 {
+    
+    display: flex;
+    text-align: center;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    flex-direction: column;
+        
+}
+
+
+
+
+
+
+
+
+
+.contactez-nous {
+    display: flex;
+    margin-right: 7rem;
+    flex-direction: column;
+    color: blue;
+    text-align: center;
+    margin-right: 0;
+    line-height: 150%;
+}
+
+.contactez-nous button {
+min-width: 80px;
+height: 32px;
+color: white;
+background-color: blue;
+border-radius: 2px;
+outline: none;
+border: 0;
+cursor: pointer;
+margin-bottom: 6rem;
+margin-top: 1rem;
+}
+
+.contactez-nous #message {
+    height: 100px;
+    width: 300px;
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+}
+
+.contact2 {
+    
+    display: flex;
+    text-align: center;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    flex-direction: column;
+        
+}
+
+.contact2 iframe {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+
+.contact1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+
+
+.lieu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.contactez-nous input {
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    min-height: 32px;
+}
+
+.contactez-nous select {
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    min-height: 36px;
+}
+
+
+
+
+
+
+.connexioninscription {
+    display: flex;
+    margin-right: 7rem;
+    flex-direction: column;
+    color: blue;
+    text-align: center;
+    margin-right: 0;
+    line-height: 150%;
+    margin-top: 8rem;
+}
+
+.connexioninscription button {
+min-width: 80px;
+height: 32px;
+color: white;
+background-color: blue;
+border-radius: 2px;
+outline: none;
+border: 0;
+cursor: pointer;
+margin-bottom: 6rem;
+margin-top: 1rem;
+}
+
+
+
+.inscription {
+    
+    display: flex;
+    text-align: center;
+    color: blue;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    flex-direction: column;
+        
+}
+
+
+
+
+
+.connexioninscription input {
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    min-height: 32px;
+}
+
+
+
+
+
+
+
+
+.lieu p {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: 7rem;
+    color: blue;
+    text-align: justify;
+}
+
+.produit {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.produit .photoproduit {
+
+    
+        width : 300px;
+        height : 300px;
+
+}
+
+.produit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.card-container-cadeaux {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem 0 5rem;
+}
+
+.menu-card-cadeaux {
+    width: auto;
+    height: 423px;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(39, 39, 39, 0.1);
+    border-radius: 2px;
+}
+
+.menu-card-cadeaux p {
+    text-align: start;
+    color: blue;
+}
+
+.menu-card-cadeaux .blocktext2 input {
+
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 16px;
+    border-radius: 2px;
+    min-width: 80px;
+    height: 32px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+.menu-card-cadeaux .blocktext2 i {
+    margin-top: 1rem;
+}
+
+.menu-card-cadeaux .blocktext2 {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 1rem;
+    color: blue;
+
+}
+
+
+.menu-card-cadeaux .blocktext {
+    margin-top: 1.4rem;
+    line-height: 150%;
+}
+
+
+.menu-card-cadeaux img {
+    width: 300px;
+    border-radius: 2px;
+}
+
+
+
+.soustitre {
+    margin-top: 170px;
+}
+
+.produit .description {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    text-align: start;
+}
+
+
+
+
+@media screen and (min-width: 963px) {
+
+
+    .lieu p {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        margin-top: 7rem;
+        color: blue;
+    }
+
+
+    .navgauche>li:last-child {
+        margin-bottom: 15px;
+    }
+
+    .container {
+        grid-template-areas: "navgauche navdroite";
+    }
+
+    .navgauche {
+        display: flex;
+    }
+
+
+    header .container .menuburger {
+        display: none;
+    }
+
+    ul {
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    header .container {
+        padding: 0 100px;
+    }
+
+
+    footer .fondblanc .logis {
+        color: #0000FF;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    footer .fondblanc .logis .livraisons {
+        text-align: center;
+        margin: 30px;
+    }
+
+    footer .fondblanc .logis .paiement {
+        text-align: center;
+        margin: 30px;
+    }
+
+    footer .fondblanc .logis .retours {
+        text-align: center;
+        margin: 30px;
+    }
+
+    footer .fondbleu {
+        display: flex;
+        flex-direction: row;
+        text-align: start;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer .fondbleu .network {
+
+        margin-top: 0;
+    }
+
+    footer .fondbleu .newsletter {
+
+        margin-top: 0;
+    }
+
+    footer .fondbleu .informations {
+
+        margin-top: 0;
+    }
+
+    footer .fondbleu .cartedevisiteracine {
+        display: flex;
+        gap: 58px;
+    }
+
+    footer .fondbleu .network a {
+        margin-left: 0;
+    }
+
+    body .selecto {
+        display: flex;
+        justify-content: end;
+        padding-top: 5rem;
+        margin-right: 7rem;
+    }
+
+    .contact1 {
+        display: flex;
+        flex-direction: row;
+        margin-top: 8rem;
+        justify-content: center;
+        gap : 150px;
+        align-items: center;
+    }
+
+    .contactez-nous button {
+        margin-bottom: 0;
+    }
+    
+
+
+    .connexioninscription {
+        display: flex;
+        flex-direction: row;
+        margin-top: 8rem;
+        justify-content: center;
+        gap : 150px;
+        align-items: flex-start;
+    }
+
+
+    .connexioninscription button {
+        margin-bottom: 0;
+    }
+    
+
+ 
+
+    .produit {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .produit .photoproduit {
+        margin-left: 7rem;
+        height: 500px;
+        width: 500px;
+
+    }
+    .produit .description {
+        margin-left: 4rem;
+        margin-right: 7rem;
+        text-align: start;
+    }
+
+
+}
