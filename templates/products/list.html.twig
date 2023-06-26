@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductsController!{% endblock %}
+
+{% block body %}
+
+<div class="soustitre"> <h2>Creation</h2> </div>
+<main class="liste">
+        
+
+
+     
+<a class="ajouterproduit" href="{{ path('products_new') }}" type="button">Ajouter</a>
+                
+                <table class="table-style">
+                    
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Titre</th>
+                            <th>Description</th>
+                            <th>Artiste</th>
+                            <th>Prix</th>
+                            <th>Date de publication</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    
+        
+                <tbody>
+
+                    {% for oeuvre in oeuvres %}
+
+                        <tr>
+
+                            <th scope="row">{{ oeuvre.id }}</th>
+                            <td>{{ oeuvre.titre }}</td>
+
+                            {% if oeuvre.description|length >= 30 %}
+
+                            <td>{{ oeuvre.description|slice(0, 47)}}...</td>
+                            {% else %}
+                            <td>{{ oeuvre.description }}</td>
+                            {% endif %}
+
+                            <td> {{ oeuvre.artiste.nom |default('N.C') }} </td>
+
+                            {% if oeuvre.prix is not null %}
+
+                            <td>{{ oeuvre.prix ~ " €"}}</td>
+                            {% else %}
+                            <td>NC</td>
+                            {% endif %}
+
+                            {% if oeuvre.publishedAt is not null %}
+                            <td>{{ oeuvre.publishedAt|date("d/m/Y à H:i:s") }}</td>
+                            {% else %}
+                            <td>NC</td>
+                            {% endif %}
+                        <td>
+                        <a href="{{ path('oeuvre_detail', {id: oeuvre.id}) }}" class="buttonafficher">Afficher</a>
+                        <a href="{{ path('oeuvre_edit', {id: oeuvre.id}) }}" type="button">Modifier</a>
+                        <a href="{{ path('oeuvre_delete', {id: oeuvre.id}) }}" type="button">Supprimer</a>
+                        </td>
+
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+            
+                </table>
+                      
+
+            
+
+        
+
+
+</main>
+
+{% endblock %}

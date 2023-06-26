@@ -6,6 +6,8 @@
 
 }
 
+
+
 .container {
     display: grid;
     grid-template-areas: "burger    navdroite"
@@ -218,6 +220,11 @@ footer .fondblanc .newsletter button {
     
 }
 
+/* body {
+    padding-top: 144px;
+}
+*/
+
 body .selecto {
     display: flex;
     justify-content: center;
@@ -249,12 +256,13 @@ body .selecto select {
 }
 
 
+
 .menu-card p {
     text-align: start;
     color: blue;
 }
 
-.menu-card .blocktext2 input {
+.menu-card .blocktext2 a {
 
     display: inline-block;
     outline: 0;
@@ -511,7 +519,7 @@ body .selecto select {
 
 
 
-.produit .description input {
+.produit .description .input {
     display: inline-block;
     outline: 0;
     text-align: center;
@@ -580,11 +588,21 @@ body .slider img.active {
     line-height: 150%;
 }
 
+.formcreation {
+    display: flex;
+    margin-right: 7rem;
+    flex-direction: column;
+    color: blue;
+    text-align: center;
+    margin-right: 0;
+    line-height: 150%;
+}
+
 .contactez-nous button {
 min-width: 80px;
 height: 32px;
-color: white;
-background-color: blue;
+color: white !important;
+background-color: blue !important;
 border-radius: 2px;
 outline: none;
 border: 0;
@@ -593,7 +611,28 @@ margin-bottom: 6rem;
 margin-top: 1rem;
 }
 
+.formcreation button {
+    min-width: 80px;
+    height: 32px;
+    color: white;
+    background-color: blue;
+    border-radius: 2px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+    }
+
 .contactez-nous #message {
+    height: 100px;
+    width: 300px;
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+}
+
+.formcreation #message {
     height: 100px;
     width: 300px;
     border: 1px solid rgb(233, 233, 233);
@@ -626,7 +665,19 @@ margin-top: 1rem;
     padding-bottom: 5rem;
 }
 
+.creation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
 
+.liste {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
 
 .lieu {
     display: flex;
@@ -636,6 +687,14 @@ margin-top: 1rem;
 }
 
 .contactez-nous input {
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    min-height: 32px;
+}
+
+.formcreation input {
     border: 1px solid rgb(233, 233, 233);
     outline: none;
     border-radius: 2px;
@@ -651,6 +710,13 @@ margin-top: 1rem;
     min-height: 36px;
 }
 
+.formcreation select {
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    min-height: 36px;
+}
 
 
 
@@ -666,10 +732,20 @@ margin-top: 1rem;
     line-height: 150%;
 }
 
+.formcreation {
+    display: flex;
+    margin-right: 7rem;
+    flex-direction: column;
+    color: blue;
+    text-align: center;
+    margin-right: 0;
+    line-height: 150%;
+}
+
 .contactez-nous button {
-min-width: 80px;
+min-width: 80px !important;
 height: 32px;
-color: white;
+color: white !important;
 background-color: blue;
 border-radius: 2px;
 outline: none;
@@ -679,7 +755,20 @@ margin-bottom: 6rem;
 margin-top: 1rem;
 }
 
-.contactez-nous #message {
+.formcreation button {
+    min-width: 80px;
+    height: 32px;
+    color: white;
+    background-color: blue;
+    border-radius: 2px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+    }
+
+.formcreation #message {
     height: 100px;
     width: 300px;
     border: 1px solid rgb(233, 233, 233);
@@ -702,6 +791,16 @@ margin-top: 1rem;
 
 
 
+.connexioncompte {
+    text-align: center;
+    color: black;
+    padding-top: 3rem;
+}
+
+.connexioncompte .titreinfo {
+    font-size: 20px;
+}
+
 
 
 
@@ -717,18 +816,42 @@ margin-top: 1rem;
     line-height: 150%;
 }
 
+.formcreation {
+    display: flex;
+    margin-right: 7rem;
+    flex-direction: column;
+    color: blue;
+    text-align: center;
+    margin-right: 0;
+    line-height: 150%;
+}
+
 .contactez-nous button {
-min-width: 80px;
-height: 32px;
-color: white;
+    color: white !important;
+min-width: 80px !important;
+height: 32px !important;
+
 background-color: blue;
-border-radius: 2px;
-outline: none;
-border: 0;
-cursor: pointer;
+border-radius: 2px !important;
+outline: none !important;
+border: 0 !important;
+cursor: pointer !important;
 margin-bottom: 6rem;
 margin-top: 1rem;
 }
+
+.formcreation button {
+    min-width: 80px;
+    height: 32px;
+    color: white;
+    background-color: blue;
+    border-radius: 2px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 6rem;
+    margin-top: 1rem;
+    }
 
 .contactez-nous #message {
     height: 100px;
@@ -736,6 +859,30 @@ margin-top: 1rem;
     border: 1px solid rgb(233, 233, 233);
     outline: none;
     border-radius: 2px;
+}
+
+.formcreation #message {
+    height: 100px;
+    width: 300px;
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+}
+
+.buttonafficher {
+    display: inline-block !important;
+    outline: 0 !important;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 16px;
+    border-radius: 2px;
+    min-width: 80px;
+    background-color: blue !important;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid blue !important;
 }
 
 .contact2 {
@@ -763,6 +910,19 @@ margin-top: 1rem;
     padding-bottom: 5rem;
 }
 
+.creation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.liste {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    padding-bottom: 5rem;
+}
 
 
 .lieu {
@@ -780,7 +940,23 @@ margin-top: 1rem;
     min-height: 32px;
 }
 
+.formcreation input {
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    min-height: 32px;
+}
+
 .contactez-nous select {
+    border: 1px solid rgb(233, 233, 233);
+    outline: none;
+    border-radius: 2px;
+    width: 300px;
+    min-height: 36px;
+}
+
+.formcreation select {
     border: 1px solid rgb(233, 233, 233);
     outline: none;
     border-radius: 2px;
@@ -794,6 +970,17 @@ margin-top: 1rem;
 
 
 .connexioninscription {
+    display: flex;
+    margin-right: 7rem;
+    flex-direction: column;
+    color: blue;
+    text-align: center;
+    margin-right: 0;
+    line-height: 150%;
+    margin-top: 8rem;
+}
+
+.panier {
     display: flex;
     margin-right: 7rem;
     flex-direction: column;
@@ -965,7 +1152,90 @@ margin-top: 1rem;
 
 
 
+.liste2 {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.liste2 .ajouterproduit a {
+    display: flex;
+}
+
+
+
+.liste {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+.liste .ajouterproduit {
+    display: inline-block !important;
+    outline: 0 !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    padding: 0px 16px !important;
+    border-radius: 2px !important;
+    min-width: 80px !important;
+    height: 32px !important;
+    background-color: blue !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    box-sizing: border-box !important;
+    border: 1px solid blue !important;
+
+}
+
+
+
+
+.liste .table-style  {
+    border-collapse: collapse;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+    cursor: pointer;
+    margin: 0px auto;
+    border: 2px solid blue;
+}
+
+.liste .table-style thead tr {
+    background-color: blue;
+    color: #fff;
+    text-align: left;
+}
+
+.liste .table-style th, td {
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.liste .table-style tbody tr, td, th {
+    border: 1px solid #ddd;
+}
+
+.liste .table-style tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+
+
+
+
+
+
 @media screen and (min-width: 963px) {
+
+    .liste .table-style  {
+        width: 90%;
+        margin: 0px;
+        font-size: 10px;
+      }
+      .liste .table-style  th, td {
+        padding: 10px 7px;
+    }
+
+
+
 
 
     .lieu p {
@@ -1074,10 +1344,32 @@ margin-top: 1rem;
         align-items: center;
     }
 
+    .creation {
+        display: flex;
+        flex-direction: row;
+        margin-top: 8rem;
+        justify-content: center;
+        gap : 150px;
+        align-items: center;
+    }
+
+    .liste {
+        display: flex;
+        flex-direction: row;
+        margin-top: 8rem;
+        justify-content: center;
+        gap : 150px;
+        align-items: center;
+    }
+
+
     .contactez-nous button {
         margin-bottom: 0;
     }
     
+    .formcreation button {
+        margin-bottom: 0;
+    }
 
 
     .connexioninscription {
@@ -1094,6 +1386,15 @@ margin-top: 1rem;
         margin-bottom: 0;
     }
     
+
+    .panier {
+        display: flex;
+        flex-direction: row;
+        margin-top: 8rem;
+        justify-content: center;
+        gap : 150px;
+        align-items: flex-start;
+    }
 
  
 

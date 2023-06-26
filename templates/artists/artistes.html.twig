@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Artistes{% endblock %}
+
+{% block body %}
+   
+   <main>
+
+        <div class="soustitre"> <h2>Artistes</h2> </div>
+
+        <div class="selecto">
+            <select name="format" id="format">
+              <option selected disabled>Trier</option>
+              <option value="pdf">Nouveautés</option>
+              <option value="txt">Prix croissant</option>
+              <option value="epub">Prix décroissant</option>
+              <option value="fb2">Promo</option>
+            </select>
+        </div>
+         
+          <div class="card-container-artistes">
+          {% for artiste in artistes %}
+        <div class="menu-card-artistes">
+        
+            <a href="{{ path('artiste_detail', {id: artiste.id}) }}">
+            
+        {% if artiste.imageName %}
+        
+        <img class="card-img-top" src="{{ asset('/images/artistes/' ~ artiste.imageName ) }}" alt="..." />
+    
+        {% else %}
+
+        <img class="photoproduit" src=" https://picsum.photos/300" alt="...">
+                            
+        {% endif %}  
+
+
+
+            <div class="blocktext">
+            <p>{{ artiste.nom }}</p>
+            <p>{{ artiste.activite }}</p>
+                </div>
+            </a>
+            <div class="blocktext2">
+            <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
+        {# <a href="{{ path('cart_add', {id: artiste.id}) }}" class="input">En savoirs plus</a> #}
+        
+            </div>
+        
+       
+
+        </div>
+{% endfor %}
+        </main>
+
+{% endblock %}

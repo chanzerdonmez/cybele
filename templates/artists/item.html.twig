@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductsController!{% endblock %}
+
+{% block body %}
+
+
+
+ <main class="produit">
+
+        {% if artistes.imageName %}
+        
+        <img class="card-img-top" src="{{ asset('/images/artistes/' ~ artistes.imageName ) }}" alt="..." />
+
+    
+        {% else %}
+
+        <img class="photoproduit" src=" https://picsum.photos/300" alt="...">
+                            
+        {% endif %}  
+
+        <div class="description">
+            <h1>{{ artistes.nom }}</h1><br>
+            <h2>{{ artistes.activite }}</h2> <br><br>
+
+            Description <br>
+            Carte de Paris Dix" est une réalisation créée en collaboration avec la mairie du Dixième arrondissement de
+            Paris. <br>
+            La carte est un dessin réalisé sur plusieurs semaines au stylo noir uniball eye. Les couleurs ont ensuite
+            Envoyé par une petite entreprise basée ici : France <br>
+            Matériaux : stylo, photoshop, affiche <br>
+            Largeur: 42 centimètres <br>
+            Hauteur: 29.7 centimètres <br>
+            <br><br>
+        </div>
+
+    </main>
+
+{% endblock %}

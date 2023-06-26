@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CartController!{% endblock %}
+
+{% block body %}
+
+<div class="soustitre">
+        <h2>Panier</h2>
+    </div>
+    <main class="panier">
+
+
+        <div class="connexioncompte">
+
+        
+            {% if items is empty %}
+<p><b>Votre panier est vide !!</b></p>
+{% else %}
+
+{% endif %}
+
+
+
+<table class="table-style">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Titre</th>
+                {# <th scope="col">Catégorie</th> #}
+                <th scope="col">Prix (€)</th>
+                <th scope="col">Quantité</th>
+                <th scope="col">Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        {% for item in items %}
+        {% if (item.product != null ) %}
+            <tr>
+                <th scope="row">{{ item.product.id }}</th>
+                <td>{{ item.product.titre }}</td>
+                {# <td>{{ item.product.category.name }}</td> #}
+                <td>{{ item.product.prix }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.product.prix * item.quantity }} €</td>
+                <td>
+                    <a onclick="return confirm('Supprimer cet élément du panier ?')"href="{{ path('cart_delete', {id: item.product.id}) }}">
+                        <i class="fa-solid fa-trash"></i>
+                    </a>
+                </td>
+            </tr>
+            {% else %}
+     
+            {% endif %}
+        {% endfor %}
+
+
+
+        </tbody>
+
+        <tfoot>
+
+                <tr>
+                        <td colspan="3">TOTAL</td>
+                        <td></td>
+                        <td>{{ total }} €</td>
+                        <td>
+                        <form action="/checkout" method="POST">
+                        <button type="submit">PAYER !!! (€)</button>
+                        </form>
+                        </td>
+    
+                </tr>
+
+        </tfoot>
+    </table>
+
+
+
+        </div>
+    
+    </main>
+
+{% endblock %}

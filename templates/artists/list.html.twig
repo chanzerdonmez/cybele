@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductsController!{% endblock %}
+
+{% block body %}
+
+<div class="soustitre"> <h2>Creation</h2> </div>
+<main class="liste">
+        
+
+
+     
+<a class="ajouterproduit" href="{{ path('artists_new') }}" type="button">Ajouter</a>
+                
+                <table class="table-style">
+                    
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nom</th>
+                            <th>Activité</th>
+                            <th>Date de publication</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    
+        
+                <tbody>
+
+                    {% for artiste in artistes %}
+
+                        <tr>
+
+                            <th scope="row">{{ artiste.id }}</th>
+                            <td>{{ artiste.nom }}</td>
+
+                            {% if artiste.activite|length >= 30 %}
+
+                            <td>{{ artiste.activite|slice(0, 47)}}...</td>
+                            {% else %}
+                            <td>{{ artiste.activite }}</td>
+                            {% endif %}
+
+
+                            {% if artiste.publishedAt is not null %}
+                            <td>{{ artiste.publishedAt|date("d/m/Y à H:i:s") }}</td>
+                            {% else %}
+                            <td>NC</td>
+                            {% endif %}
+                        <td>
+                        <a href="{{ path('artiste_detail', {id: artiste.id}) }}" class="buttonafficher">Afficher</a>
+                        <a href="{{ path('artiste_edit', {id: artiste.id}) }}" type="button">Modifier</a>
+                        <a href="{{ path('artiste_delete', {id: artiste.id}) }}" type="button">Supprimer</a>
+                        </td>
+
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+            
+                </table>
+                      
+
+            
+
+        
+
+
+</main>
+
+{% endblock %}
