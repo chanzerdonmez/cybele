@@ -7,7 +7,6 @@
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
-
     </head>
     
 
@@ -16,7 +15,7 @@
             <header>
 
         <p class="livraison">Livraison gratuite pour commandes de plus de 100€</p>
-        <a href="{{ path('home') }}" class="logo"><img src="{{ asset ('img/logocybèle.svg') }}"></a>
+        <a href="{{ path('home') }}" class="logo"><img src="{{ asset ('./img/logocybele.svg') }}"></a>
         <div class="ligne"></div>
         <nav class="container">
         
@@ -24,7 +23,7 @@
                 <li> <a href="{{ path('home') }}">Accueil</a></li>
                 <li> <a href="{{ path('oeuvres') }}">Œuvres</a></li>
                 <li> <a href="{{ path('artists') }}">Artistes</a></li>
-                <li> <a href="agenda.html">Agenda</a></li>
+                <li> <a href="{{ path('agenda') }}">Agenda</a></li>
                 <li> <a href="{{ path('app_contact') }}">Contact</a></li>
             </ul>
             <a class="menuburger" href="#"><i class="fa-solid fa-bars"></i></a>
@@ -48,13 +47,13 @@
                 <main class="logis">
                     <div class="livraisons">
                         <i class="fa-solid fa-truck"></i>   <br>
-                        <p class="Titre1">Livraisons garanties</p>
+                        <p class="Titre1" style="margin-top:7px;">Livraisons garanties</p>
                         <p class="SousTitre1"></p>par des transporteurs spécialisés</p> 
                     </div>
                     <div class="paiement">
                         <i class="fa-solid fa-lock"></i> <br>
-                        <p class="Titre2"></p>Paiement sécurisés</p>
-                        <p class="SousTitre2"></p>par CB ou 3x sans frais</p> 
+                        <p class="Titre2" style="margin-top:7px;"></p>Paiement sécurisés</p>
+                        <p class="SousTitre2" style="font-size:14px;"></p>par CB ou 3x sans frais</p> 
                     </div>   
                     <div class="retours">
                         <i class="fa-solid fa-rotate-left"></i> <br>
@@ -64,8 +63,9 @@
                 </main>
 
     <div class="newsletter">
-        <p>Abonnez-vous à notre newsletter</p>
-        <p>Soyez sûr de ne manquer aucune de nos nouveautés et promotions</p>
+        <p class="abonnez" style="font-family: 'Inter', sans-serif; font-weight:500; font-size:18px;">Abonnez-vous à notre newsletter</p>
+        <p class="stn" style="font-family: 'Inter', sans-serif;
+    font-weight: 500; font-size:13px; margin-bottom: 7px; font-size:14px;">Soyez sûr de ne manquer aucune de nos nouveautés et promotions</p>
         <input type="text" placeholder="Saisissez votre adresse e-mail" name="mail" required> <button type="submit">Envoyer</button>
         </div>
 
@@ -105,7 +105,6 @@
     <div class="informations">
 
     <p>
-    <br>
     Mentions légales<br>
     Politique de confidentialité<br>
     Cookies<br>

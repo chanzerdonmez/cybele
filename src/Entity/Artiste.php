@@ -138,4 +138,7 @@ class Artiste
 
         return $this;
     }
+
+
+    
 }

@@ -39,12 +39,12 @@
             <div class="blocktext">
             <p>{{ oeuvre.titre }}</p>
             <p>{{ oeuvre.artiste.nom|default ('NC') }}</p>
-            <p>{{ oeuvre.prix }}€</p>
+            <p id="prix">{{ oeuvre.prix }}€</p>
                 </div>
             </a>
             <div class="blocktext2">
             <i onclick="myFunction(this)" class="fa-regular fa-heart"></i>
-        <a href="{{ path('cart_add', {id: oeuvre.id}) }}" class="input">Ajouter</a>
+        <a href="{{ path('cart_add', {id: oeuvre.id}) }}" class="input">Ajouter au panier</a>
         
             </div>
         

@@ -69,13 +69,7 @@ class Oeuvre
 
     public function getPrix(): ?int
     {
-        if($this->prix != null)
-        {
-            return $this->prix;
-            
-        } else {
-            return "Pas de prix";
-        }
+        return $this->prix;
     }
 
     public function setPrix(?int $prix): self

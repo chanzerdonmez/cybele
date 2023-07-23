@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Artistes{% endblock %}
+
+{% block body %}
+   
+   <main>
+
+        <div class="soustitre"> <h2>Agenda</h2> </div>
+
+        <div class="selecto">
+            <select name="format" id="format">
+              <option selected disabled>Trier</option>
+              <option value="pdf">Nouveautés</option>
+              <option value="txt">Prix croissant</option>
+              <option value="epub">Prix décroissant</option>
+              <option value="fb2">Promo</option>
+            </select>
+        </div>
+         
+          <div class="card-container-agenda">
+          {% for agenda in agendas %}
+        <div class="menu-card-agenda">
+        
+            {# <a href="{{ path('artiste_detail', {id: artiste.id}) }}"> #}
+            
+        {% if agenda.imageName %}
+        
+        <img class="card-img-top" src="{{ asset('/images/artistes/' ~ agenda.imageName ) }}" alt="..." />
+    
+        {% else %}
+
+        <img class="photoproduit" src=" https://picsum.photos/300" alt="...">
+                            
+        {% endif %}  
+
+
+
+            <div class="blocktext">
+            <p>{{ agenda.titre }}</p>
+            <p>{{ agenda.description }}</p>
+                </div>
+            </a>
+            <div class="blocktext2">
+
+        
+            </div>
+        
+       
+
+        </div>
+{% endfor %}
+        </main>
+
+{% endblock %}

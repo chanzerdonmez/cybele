@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProductsController!{% endblock %}
+
+{% block body %}
+
+
+
+    <div class="soustitre"> <h2>Creation</h2> </div>
+<main class="creation">
+        
+
+            <div class="formcreation">
+            {{ form_start(formAgenda) }}
+                <div>
+                    <label for="nom">Titre</label><br>
+                    {{ form_widget(formAgenda.titre) }}
+                </div>
+                <div>
+                    <label for="nom">Description</label><br>
+                    {{ form_widget(formAgenda.description) }}
+                </div>
+                {{ form_widget(formAgenda.imageFile) }}
+                <div>
+                    <input type="submit" value="Envoyer">
+                </div>
+            {{ form_end(formAgenda) }}
+            </div> 
+
+       
+
+
+</main>
+
+
+
+{% endblock %}
